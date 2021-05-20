@@ -12,8 +12,9 @@ import {
   Container
 } from '@material-ui/core';
 import { PhotoCamera } from '@material-ui/icons';
-import useStyles from './styles'
-
+import useStyles from './styles';
+import DataTable from './DataTable';
+import PaginationDataTable from './paginationDataTable'
 const cards = [1, 2, 3, 4, 5, 6, 8, 9]
 
 function App() {
@@ -84,6 +85,11 @@ function App() {
           </Grid>
         </Container>
       </main>
+     
+      <Grid className={classes.card}>
+      {/* <DataTable /> */}
+     <PaginationDataTable />
+      </Grid>
       <footer className={classes.footer}>
           <Typography varient="h6" align="center" gutterBottom>
             Footer
